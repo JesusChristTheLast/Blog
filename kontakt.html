@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt - Mein Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="themen.html">Themen</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Autoren Sektion -->
+
+      <section id="autoren">
+        <div class="author">
+          <img src="images/authors/max.jpg" alt="Max Mustermann" />
+          <p><strong>Max Mustermann</strong></p>
+          <p>
+            Email:
+            <a href="mailto:max.mustermann@example.com"
+              >max.mustermann@example.com</a
+            >
+          </p>
+        </div>
+        <div class="author">
+          <img src="images/authors/maria.jpg" alt="Maria Mustermann" />
+          <p><strong>Maria Mustermann</strong></p>
+          <p>
+            Email:
+            <a href="mailto:maria.mustermann@example.com"
+              >maria.mustermann@example.com</a
+            >
+          </p>
+        </div>
+        <div class="author">
+          <img src="images/authors/julius.jpg" alt="Julius Muster" />
+          <p><strong>Julius Muster</strong></p>
+          <p>
+            Email:
+            <a href="mailto:julius.muster@example.com"
+              >julius.muster@example.com</a
+            >
+          </p>
+        </div>
+        <div class="author">
+          <img src="images/authors/laura.jpg" alt="Laura Weber" />
+          <p><strong>Laura Weber</strong></p>
+          <p>
+            Email:
+            <a href="mailto:laura.weber@example.com">laura.weber@example.com</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Kontaktformular Sektion -->
+      <section id="kontakt-formular">
+        <h2>Kontaktformular</h2>
+        <form action="kontakt-speichern.php" method="post">
+          <label for="name">Ihr Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Ihre E-Mail-Adresse:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="nachricht">Ihre Nachricht:</label>
+          <textarea id="nachricht" name="nachricht" required></textarea>
+
+          <label for="betreff">Betreff:</label>
+          <select name="betreff" id="betreff">
+            <option value="allgemein">Allgemeine Anfrage</option>
+            <option value="artikel">Artikel Anfrage</option>
+            <option value="feedback">Feedback</option>
+          </select>
+
+          <button type="submit">Absenden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mein Blog. Alle Rechte vorbehalten.</p>
+    </footer>
+  </body>
+</html>

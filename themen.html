@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Themen - Mein Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="themen">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="themen.html">Themen</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="filter">
+        <h2>Filter nach Thema</h2>
+        <button class="filter-btn" data-category="all">Alle</button>
+        <button class="filter-btn" data-category="programmierung">
+          Programmierung
+        </button>
+        <button class="filter-btn" data-category="design">Design</button>
+        <button class="filter-btn" data-category="marketing">Marketing</button>
+      </section>
+
+      <!-- Artikelübersicht -->
+      <section id="artikel-uebersicht">
+        <h2>Artikelübersicht</h2>
+        <!-- Hier werden Artikel dynamisch hinzugefügt -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mein Blog. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

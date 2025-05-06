@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mein Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="themen.html">Themen</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Filterbereich -->
+      <section id="filter">
+        <h2>Filter nach Thema</h2>
+        <button class="filter-btn" data-category="all">Alle</button>
+        <button class="filter-btn" data-category="programmierung">
+          Programmierung
+        </button>
+        <button class="filter-btn" data-category="design">Design</button>
+        <button class="filter-btn" data-category="marketing">Marketing</button>
+      </section>
+
+      <!-- Artikelübersicht -->
+      <section id="artikel-uebersicht">
+        <h2>Neueste Artikel</h2>
+        <!-- Hier werden die Artikel dynamisch hinzugefügt -->
+      </section>
+
+      <!-- Newsletter -->
+      <section id="newsletter">
+        <h2>Newsletter anmelden</h2>
+        <form action="newsletter-speichern.php" method="post">
+          <input
+            type="email"
+            name="newsletter_email"
+            placeholder="Ihre E-Mail-Adresse"
+            required
+          />
+          <button type="submit">Anmelden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mein Blog. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+      // Funktion, um Artikel zu laden und anzuzeigen
+      async function loadArticles() {
+        try {
+          // Artikel-Daten aus der JSON-Datei laden
+          const response = await fetch("articles.json");
+          const articles = await response.json();
+
+          // Funktion zum Sortieren der Artikel nach Datum (neueste zuerst)
+          function sortArticlesByDate(articles) {
+            return articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+          }
+
+          // Holen der 4 neuesten Artikel
+          const latestArticles = sortArticlesByDate(articles).slice(0, 4);
+
+          // Artikelübersicht-Container
+          const articlesContainer =
+            document.getElementById("artikel-uebersicht");
+
+          // Artikel anzeigen
+          latestArticles.forEach((article) => {
+            const articleElement = document.createElement("article");
+            articleElement.innerHTML = `
+              <h3>${article.title}</h3>
+              <p><strong>Veröffentlicht am:</strong> ${article.date}</p>
+              
+              <img src="${article.image}" alt="${
+              article.title
+            }" class="article-img">
+              <p>${article.content.substring(0, 150)}...</p>
+              <a id="weiterlesen" href="artikel.html?id=${
+                article.id
+              }">Weiterlesen</a>
+            `;
+            // Jedes Article bekommt data-category-Attribut basierend auf Kategorie
+            articleElement.setAttribute("data-category", article.category);
+            articlesContainer.appendChild(articleElement);
+          });
+        } catch (error) {
+          console.error("Fehler beim Laden der Artikel:", error);
+        }
+      }
+
+      // Funktion für den Filter
+      function applyFilter(category) {
+        const articles = Array.from(
+          document.querySelectorAll("#artikel-uebersicht article")
+        );
+        articles.forEach((article) => {
+          const articleCategory = article.getAttribute("data-category");
+          if (category === "all" || articleCategory === category) {
+            article.style.display = "block";
+          } else {
+            article.style.display = "none";
+          }
+        });
+      }
+
+      // Event-Listener für die Filter-Buttons
+      document.querySelectorAll(".filter-btn").forEach((button) => {
+        button.addEventListener("click", (e) => {
+          const category = e.target.getAttribute("data-category");
+          applyFilter(category);
+        });
+      });
+
+      // Artikel laden, wenn die Seite geladen wird
+      window.onload = loadArticles;
+    </script>
+  </body>
+</html>

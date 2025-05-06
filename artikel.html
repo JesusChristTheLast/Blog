@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel Detail</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="themen.html">Themen</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="article-detail">
+      <!-- Der vollständige Artikel wird hier eingefügt -->
+      <p>Lade Artikel...</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mein Blog. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const articleId = parseInt(urlParams.get("id"));
+
+        //holt artikel
+        fetch("articles.json")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Fehler beim Laden der Artikeldaten");
+            }
+            return response.json();
+          })
+          .then((articles) => {
+            const article = articles.find((a) => a.id === articleId);
+            const container = document.getElementById("article-detail");
+
+            if (article) {
+              container.innerHTML = `
+              <h1>${article.title}</h1>
+              <p><strong>Veröffentlicht am:</strong> ${article.date}</p>
+              <p><strong>Autor:</strong> <img src="${article.authorImage}" alt="${article.author}" class="author-img"> ${article.author}</p>
+              <img src="${article.image}" alt="${article.title}" class="article-img">
+              <div class="article-content">${article.content}</div>
+            `;
+            } else {
+              container.innerHTML = "<p>Artikel nicht gefunden!</p>";
+            }
+          })
+          .catch((error) => {
+            document.getElementById(
+              "article-detail"
+            ).innerHTML = `<p>Fehler: ${error.message}</p>`;
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+[
+    {
+      "id": 1,
+      "title": "Die Zukunft von JavaScript",
+      "content": "JavaScript entwickelt sich ständig weiter und bleibt eine der zentralen Technologien im Web. Mit neuen Features wie optional chaining und nullish coalescing wird der Code lesbarer und weniger fehleranfällig. Frameworks wie React und Vue.js ermöglichen effiziente UI-Entwicklung, während Node.js serverseitige Anwendungen mit JavaScript ermöglicht. Die Community arbeitet kontinuierlich an Verbesserungen, um JavaScript zukunftssicher zu machen.",
+      "image": "bilder/bild1.webp",
+      "author": "Max Mustermann",
+      "authorImage": "images/authors/max.jpg",
+      "date": "15.10.2023",
+      "category": "programmierung"
+    },
+    {
+      "id": 2,
+      "title": "Design Trends 2025",
+      "content": "Das Design für 2025 steht im Zeichen der Benutzerzentrierung und innovativer Technologien. Besonders die Benutzererfahrung (UX) wird zunehmend wichtiger. Design wird intuitiver und anpassungsfähiger, sodass sich Webseiten und Apps an unterschiedliche Bedürfnisse und Geräte anpassen können. Neue Tools und Technologien wie AR und VR eröffnen Designer*innen noch nie dagewesene Möglichkeiten.",
+      "image": "bilder/bild2.webp",
+      "author": "Maria Mustermann",
+      "authorImage": "images/authors/maria.jpg",
+      "date": "18.10.2023",
+      "category": "design"
+    },
+    {
+      "id": 3,
+      "title": "Marketing im digitalen Zeitalter",
+      "content": "Im digitalen Zeitalter ist Marketing ohne die Nutzung von sozialen Netzwerken und Influencern nicht mehr vorstellbar. Unternehmen setzen zunehmend auf Content-Marketing und Social-Media-Kampagnen, um ihre Zielgruppen auf personalisierte Weise zu erreichen. Digitale Werbung und SEO spielen ebenfalls eine Schlüsselrolle, um die Sichtbarkeit der Marke zu steigern und langfristige Kundenbeziehungen zu etablieren.",
+      "image": "bilder/bild3.webp",
+      "author": "Julius Muster",
+      "authorImage": "images/authors/julius.jpg",
+      "date": "20.10.2023",
+      "category": "marketing"
+    },
+    {
+      "id": 4,
+      "title": "Was ist Responsive Design?",
+      "content": "Responsive Design sorgt dafür, dass Webseiten auf allen Geräten gut aussehen und benutzerfreundlich bleiben. Durch flexible Layouts und Medienabfragen passen sich Webseiten automatisch an verschiedene Bildschirmgrössen an. Das bedeutet, dass eine Seite sowohl auf einem Desktop als auch auf einem Smartphone oder Tablet optimal angezeigt wird – ohne dass der Benutzer heran- oder wegzoomen muss.",
+      "image": "bilder/bild4.webp",
+      "author": "Laura Weber",
+      "authorImage": "images/authors/laura.jpg",
+      "date": "25.10.2023",
+      "category": "design"
+    },
+    {
+      "id": 5,
+      "title": "Einführung in Python",
+      "content": "Python ist eine vielseitige Programmiersprache, die sich besonders gut für Anfänger eignet, aber auch für Profis viele Möglichkeiten bietet. Sie wird in verschiedenen Bereichen wie Webentwicklung, Datenanalyse, maschinelles Lernen und Automatisierung eingesetzt. Durch ihre einfache Syntax und umfangreiche Bibliotheken hat sich Python zu einer der beliebtesten Sprachen weltweit entwickelt.",
+      "image": "bilder/bild5.webp",
+      "author": "Max Mustermann",
+      "authorImage": "images/authors/max.jpg",
+      "date": "01.11.2023",
+      "category": "programmierung"
+    },
+    {
+      "id": 6,
+      "title": "Erfolgreiches Social Media Marketing",
+      "content": "Social Media Marketing ist eine der effektivsten Methoden, um Kunden zu gewinnen und Markenbekanntheit zu steigern. Durch gezielte Kampagnen auf Plattformen wie Instagram, Facebook und TikTok können Unternehmen ihre Zielgruppen direkt ansprechen. Es geht nicht nur um Werbung, sondern auch um Interaktion und den Aufbau von Communities, die eine langfristige Bindung zu einer Marke schaffen.",
+      "image": "bilder/bild6.webp",
+      "author": "Julius Muster",
+      "authorImage": "images/authors/julius.jpg",
+      "date": "03.11.2023",
+      "category": "marketing"
+    },
+    {
+      "id": 7,
+      "title": "Grundlagen der Typografie",
+      "content": "Typografie ist eine der wichtigsten Komponenten im Webdesign, da sie direkten Einfluss auf die Lesbarkeit und Ästhetik einer Webseite hat. Sie umfasst die Wahl von Schriftarten, Zeilenabständen, Grössen und Ausrichtungen. Eine gut gestaltete Typografie sorgt dafür, dass Inhalte nicht nur ansprechend aussehen, sondern auch klar und einfach zu lesen sind.",
+      "image": "bilder/bild7.webp",
+      "author": "Maria Mustermann",
+      "authorImage": "images/authors/maria.jpg",
+      "date": "05.11.2023",
+      "category": "design"
+    },
+    {
+      "id": 8,
+      "title": "JavaScript Events erklärt",
+      "content": "JavaScript-Events sind grundlegende Bausteine für die Interaktivität auf Webseiten. Sie ermöglichen es, auf Benutzeraktionen wie Klicks, Tastatureingaben oder Mausbewegungen zu reagieren. Mit Events können Entwickler*innen dynamische und interaktive Webseiten erstellen, bei denen sich das Verhalten der Seite aufgrund von Nutzeraktionen verändert – ohne die Seite neu zu laden.",
+      "image": "bilder/bild8.webp",
+      "author": "Max Mustermann",
+      "authorImage": "images/authors/max.jpg",
+      "date": "06.11.2023",
+      "category": "programmierung"
+    },
+    {
+      "id": 9,
+      "title": "Content Marketing Basics",
+      "content": "Content Marketing ist eine langfristige Strategie, um durch wertvolle und relevante Inhalte das Engagement zu steigern und das Vertrauen der Zielgruppe zu gewinnen. Statt auf traditionelle Werbung zu setzen, zielt Content Marketing darauf ab, potenzielle Kunden mit nützlichen Informationen zu versorgen und so eine Beziehung zu ihnen aufzubauen.",
+      "image": "bilder/bild9.webp",
+      "author": "Julius Muster",
+      "authorImage": "images/authors/julius.jpg",
+      "date": "08.11.2023",
+      "category": "marketing"
+    },
+    {
+      "id": 10,
+      "title": "Videotutorial: HTML Grundlagen",
+      "content": "<p>In diesem Video erklären wir die Grundlagen von HTML:</p><iframe width='100%' height='315' src='https://www.youtube.com/embed/UB1O30fR-EE' title='HTML Tutorial' frameborder='0' allowfullscreen></iframe>",
+      
+      "author": "Laura Weber",
+      "authorImage": "images/authors/laura.jpg",
+      "date": "10.11.2023",
+      "category": "programmierung"
+    },
+    {
+      "id": 11,
+      "title": "CSS Flexbox für Anfänger",
+      "content": "CSS Flexbox ist eine leistungsstarke Layout-Technik, mit der sich komplexe Layouts einfach und flexibel gestalten lassen. Flexbox hilft dabei, Elemente innerhalb eines Containers auf verschiedenen Bildschirmgrössen korrekt auszurichten und zu verteilen. Mit wenigen Zeilen CSS-Code lassen sich responsive Designs erstellen, die auf allen Geräten gut aussehen.",
+      "image": "bilder/bild11.webp",
+      "author": "Max Mustermann",
+      "authorImage": "images/authors/max.jpg",
+      "date": "12.11.2023",
+      "category": "programmierung"
+    },
+    {
+      "id": 12,
+      "title": "UI/UX Design: Die besten Praktiken",
+      "content": "UI/UX Design beschäftigt sich mit der Gestaltung von Benutzeroberflächen und der Benutzererfahrung. Gute Designpraktiken stellen sicher, dass eine Webseite oder App nicht nur visuell ansprechend ist, sondern auch einfach zu bedienen und intuitiv. Wichtig ist, dass die Bedürfnisse der Nutzer im Mittelpunkt stehen und die Interaktionen nahtlos und angenehm sind.",
+      "image": "bilder/bild12.webp",
+      "author": "Maria Mustermann",
+      "authorImage": "images/authors/maria.jpg",
+      "date": "14.11.2023",
+      "category": "design"
+    },
+    {
+      "id": 13,
+      "title": "SEO für Einsteiger",
+      "content": "Suchmaschinenoptimierung (SEO) ist eine der wichtigsten Strategien, um die Sichtbarkeit deiner Webseite zu erhöhen und mehr organischen Traffic zu generieren. Mit Techniken wie der Optimierung von Meta-Tags, der Verbesserung der Ladegeschwindigkeit und der Erstellung von qualitativ hochwertigem Content kannst du deine Seite für Suchmaschinen wie Google sichtbarer machen.",
+      "image": "bilder/bild13.webp",
+      "author": "Julius Muster",
+      "authorImage": "images/authors/julius.jpg",
+      "date": "16.11.2023",
+      "category": "marketing"
+    },
+    {
+      "id": 14,
+      "title": "Grundlagen des maschinellen Lernens",
+      "content": "Maschinelles Lernen ist ein Teilbereich der künstlichen Intelligenz und spielt eine entscheidende Rolle in der modernen Technologie. Durch die Analyse von Daten und die Anwendung von Algorithmen können Maschinen aus Erfahrungen lernen und Vorhersagen treffen. Es wird in Bereichen wie der Bilderkennung, der Sprachverarbeitung und der Analyse von grossen Datensätzen eingesetzt.",
+      "image": "bilder/bild14.webp",
+      "author": "Laura Weber",
+      "authorImage": "images/authors/laura.jpg",
+      "date": "18.11.2023",
+      "category": "programmierung"
+    },
+    {
+      "id": 15,
+      "title": "E-Mail-Marketing: Tipps und Tricks",
+      "content": "E-Mail-Marketing bleibt eine der effektivsten Methoden, um direkt mit Kunden zu kommunizieren und Verkäufe zu steigern. Es ist wichtig, dass die E-Mails personalisiert, relevant und ansprechend sind. Durch gezielte Kampagnen können Unternehmen ihre Zielgruppe auf dem richtigen Kanal erreichen und langfristige Beziehungen aufbauen.",
+      "image": "bilder/bild15.webp",
+      "author": "Julius Muster",
+      "authorImage": "images/authors/julius.jpg",
+      "date": "20.11.2023",
+      "category": "marketing"
+    }
+  ]
+  
